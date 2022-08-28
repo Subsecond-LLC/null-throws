@@ -1,6 +1,6 @@
-# nullThrows (npm `null-throws`)
+# nullThrows
 
-It really seems like the `T` should be capitalized, so now it is.
+It really seems like the `T` should be capitalized, so now it is. (`null-throws` on npm)
 
 Created by [jones](https://github.com/jonesnxt) @ [Subsecond](https://www.getsubsecond.com).
 Based on the [`nullthrows`](https://github.com/zertosh/nullthrows) library by [zertosh](https://github.com/zertosh).

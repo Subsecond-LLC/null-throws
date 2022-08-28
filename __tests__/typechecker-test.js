@@ -3,7 +3,7 @@
 const path = require('path');
 const child_process = require('child_process');
 
-test('nullthrows with flow', () => {
+test('nullThrows with flow', () => {
   const ret = child_process.spawnSync(
     'node_modules/.bin/flow',
     ['check', path.join(__dirname, '__fixtures__/flow-package')],
@@ -17,7 +17,7 @@ test('nullthrows with flow', () => {
   expect(ret.error).toBeUndefined();
 });
 
-test('nullthrows with typescript', () => {
+test('nullThrows with typescript', () => {
   const ret = child_process.spawnSync(
     'node_modules/.bin/tsc',
     ['--project', path.join(__dirname, '__fixtures__/typescript-package')],

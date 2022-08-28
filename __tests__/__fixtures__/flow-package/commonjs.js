@@ -1,11 +1,11 @@
 /* @flow */
 
-var nullthrows = require('../../..');
+var nullThrows = require('../../..');
 
 var obj = ({}: ?Object);
 
 var bad1: Object = obj;
-var ok1: Object = nullthrows(obj);
+var ok1: Object = nullThrows(obj);
 
-nullthrows(null);
-nullthrows(null, 'my error message');
+nullThrows(null);
+nullThrows(null, 'my error message');

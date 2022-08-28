@@ -1,7 +1,8 @@
-# nullthrows
+# nullThrows (npm `null-throws`)
 
-[![Build Status](https://travis-ci.org/zertosh/nullthrows.svg?branch=master)](https://travis-ci.org/zertosh/nullthrows)
+It really seems like the `T` should be capitalized, so now it is.
 
-A [flow](https://flowtype.org) typed utility that accepts `value` (e.g. `nullthrows(value)`) and throws if `value` is `null` or `undefined`, otherwise it returns `value`.
+Created by [jones](https://github.com/jonesnxt) @ [Subsecond](https://www.getsubsecond.com).
+Based on the [`nullthrows`](https://github.com/zertosh/nullthrows) library by [zertosh](https://github.com/zertosh).
 
-Also see [`invariant`](https://github.com/zertosh/invariant).
+A [flow](https://flowtype.org) typed utility that accepts `value` (e.g. `nullThrows(value)`) and throws if `value` is `null` or `undefined`, otherwise it returns `value`.

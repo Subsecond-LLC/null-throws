@@ -1,5 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`nullThrows with flow 1`] = `""`;
+
+exports[`nullThrows with flow 2`] = `
+"Error ------------------------------------------------------------- __tests__/__fixtures__/flow-package/commonjs.js:7:20
+
+Cannot assign \`obj\` to \`bad1\` because null or undefined [1] is incompatible with object type [2].
+
+   __tests__/__fixtures__/flow-package/commonjs.js:7:20
+   7| var bad1: Object = obj;
+                         ^^^
+
+References:
+   __tests__/__fixtures__/flow-package/commonjs.js:5:16
+   5| var obj = ({}: ?Object);
+                     ^^^^^^^ [1]
+   __tests__/__fixtures__/flow-package/commonjs.js:7:11
+   7| var bad1: Object = obj;
+                ^^^^^^ [2]
+
+
+Error ------------------------------------------------------------- __tests__/__fixtures__/flow-package/esmodule.js:7:20
+
+Cannot assign \`obj\` to \`bad1\` because null or undefined [1] is incompatible with object type [2].
+
+   __tests__/__fixtures__/flow-package/esmodule.js:7:20
+   7| var bad1: Object = obj;
+                         ^^^
+
+References:
+   __tests__/__fixtures__/flow-package/esmodule.js:5:16
+   5| var obj = ({}: ?Object);
+                     ^^^^^^^ [1]
+   __tests__/__fixtures__/flow-package/esmodule.js:7:11
+   7| var bad1: Object = obj;
+                ^^^^^^ [2]
+
+
+Error --------------------------------------------------------------- __tests__/__fixtures__/flow-package/strict.js:7:20
+
+Cannot assign \`value\` to \`bad1\` because null or undefined [1] is incompatible with number [2].
+
+   __tests__/__fixtures__/flow-package/strict.js:7:20
+   7| var bad1: number = value;
+                         ^^^^^
+
+References:
+   __tests__/__fixtures__/flow-package/strict.js:5:17
+   5| var value = (1: ?number);
+                      ^^^^^^^ [1]
+   __tests__/__fixtures__/flow-package/strict.js:7:11
+   7| var bad1: number = value;
+                ^^^^^^ [2]
+
+
+Error -------------------------------------------------------------- __tests__/__fixtures__/flow-package/strict.js:13:44
+
+Unclear type. Using \`any\`, \`Object\`, \`Function\`, \`$Subtype<...>\`, or \`$Supertype<...>\` types is not safe!
+(\`unclear-type\`)
+
+   13| ("this should be an error in strict mode": any);
+                                                  ^^^
+
+
+
+Found 4 errors
+"
+`;
+
+exports[`nullThrows with typescript 1`] = `""`;
+
+exports[`nullThrows with typescript 2`] = `
+"__tests__/__fixtures__/typescript-package/index.ts(10,5): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+__tests__/__fixtures__/typescript-package/index.ts(12,5): error TS2322: Type 'string' is not assignable to type 'number'.
+"
+`;
+
 exports[`nullthrows with flow 1`] = `""`;
 
 exports[`nullthrows with flow 2`] = `

@@ -1,13 +1,13 @@
 /* @flow strict */
 
-var nullthrows = require('../../..');
+var nullThrows = require('../../..');
 
 var value = (1: ?number);
 
 var bad1: number = value;
-var ok1: number = nullthrows(value);
+var ok1: number = nullThrows(value);
 
-nullthrows(null);
-nullthrows(null, 'my error message');
+nullThrows(null);
+nullThrows(null, 'my error message');
 
-("this should be an error in strict mode": any);
+('this should be an error in strict mode': any);
